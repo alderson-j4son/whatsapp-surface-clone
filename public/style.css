@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding:0 ;
+    font-family: 'Cantarell', sans-serif;
+    
+}
+body{
+
+    background:#121b22 ;
+}
+#header{
+    background: #1f2c34;
+    color: #86959f;
+    /* font-family: 'Quicksand', sans-serif; */
+    font-family: 'Cantarell', sans-serif;
+}
+.title-head{
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+}
+.option{
+    padding: 10px;
+    
+}
+.fa-search{
+    padding: 0 10px 0 0;
+}
+.fa-ellipsis-v{
+    padding: 0 0 0 10px;
+}
+nav{
+    width: 100%;
+    flex: 2;
+}
+.nav-items{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.nav-link{
+    display: inline-block;
+    padding: 10px 15px;
+    /* background-color: yellow; */
+    border-bottom: solid transparent 4px;
+
+    
+}
+.nav-link a{
+    color: #86959f;
+    text-decoration: none;
+}
+.active{
+
+    border-bottom: solid #0ca383 4px;
+}
+.active a{
+    color: #0ca383;
+
+}
+.nav-link a:hover{
+}
+.nav-items:first-child{
+    padding:0;
+}
+img{
+    width: 100%;
+}
+#chats{
+    position: relative;
+}
+.pv{
+    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 10px 15px;
+    /* background: blue; */
+    /* float: left; */
+    transition: .3s;
+
+}
+.pv:hover{
+    background: rgba(255, 255, 255, 0.027);
+    cursor: pointer;
+    transition: .3s;
+
+}
+.profile{
+    overflow:hidden ;
+    width: 60px;
+    height: 60px;
+    justify-content: flex-start;
+}
+.profile img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    
+}
+.about-page{
+    width: 73%;
+    padding: 5px 10px;
+    color: #86959f;
+}
+.title-date{
+    display: flex;
+    justify-content: space-between;
+}
+.title-pv{
+    padding:2px 0 10px 0 ;
+    font-size: 15px;    
+}
+.time{
+    font-size: 12px;
+    padding:4px 0 0 0px;
+}
+.last-message{
+    font-size: 12px;
+}
+.add-people{
+    background: #00a884;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+
+}
+.fa-heart-crack{
+    color: white;
+    font-size: 25px;
+    padding: 17px;
+}
