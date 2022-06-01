@@ -1,167 +1,190 @@
-*{
-    margin: 0;
-    padding:0 ;
-    font-family: 'Cantarell', sans-serif;
-    
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cantarell", sans-serif;
+  box-sizing: border-box;
 }
-body{
-
-    background:#121b22 ;
+body {
+  background: #121b22;
 }
-#header{
-    background: #1f2c34;
-    color: #86959f;
-    /* font-family: 'Quicksand', sans-serif; */
-    font-family: 'Cantarell', sans-serif;
+img {
+  width: 100%;
 }
-.title-head{
-    padding: 20px;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-between;
+#chats {
+  position: relative;
 }
-.title{
+.pv {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  padding: 10px 15px;
+  transition: 0.3s;
+  position: relative;
 }
-.option{
-    padding: 10px;
-    
+.pv:hover {
+  background: rgba(255, 255, 255, 0.027);
+  cursor: pointer;
+  transition: 0.3s;
 }
-.fa-search{
-    padding: 0 10px 0 0;
+.profile {
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  justify-content: flex-start;
 }
-.fa-ellipsis-v{
-    padding: 0 0 0 10px;
+.profile img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
-nav{
-    width: 100%;
-    flex: 2;
+.fa-plus {
+  position: absolute;
+  background: #00a884;
+  color: white;
+  font-size: 17px;
+  padding: 3.7px 4px;
+  border: solid black 2px;
+  border-radius: 50%;
+  left: 0;
+  bottom: 0;
+  margin-left: 55px;
+  margin-bottom: 7px;
 }
-.nav-items{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    
+.about-page {
+  width: 73%;
+  padding: 5px 10px;
+  color: #86959f;
 }
-.nav-link{
-    display: inline-block;
-    padding: 10px 15px;
-    /* background-color: yellow; */
-    border-bottom: solid transparent 4px;
-
-    
+.title-date {
+  display: flex;
+  justify-content: space-between;
 }
-.nav-link a{
-    color: #86959f;
-    text-decoration: none;
+.title-pv {
+  padding: 2px 0 10px 0;
+  font-size: 15px;
 }
-.active{
-
-    border-bottom: solid #0ca383 4px;
+.time {
+  font-size: 12px;
+  padding: 4px 0 0 0px;
 }
-.active a{
-    color: #0ca383;
-
-}
-.nav-link a:hover{
-}
-.nav-items:first-child{
-    padding:0;
-}
-img{
-    width: 100%;
-}
-#chats{
-    position: relative;
-
-
-}
-.pv{
-    /* width: 100%; */
-    display: flex;
-    flex-wrap: wrap-reverse;
-    padding: 10px 15px;
-    /* background: blue; */
-    /* float: left; */
-    transition: .3s;
-    position: relative;
-
-}
-.pv:hover{
-    background: rgba(255, 255, 255, 0.027);
-    cursor: pointer;
-    transition: .3s;
-
-}
-.profile{
-    overflow:hidden ;
-    width: 60px;
-    height: 60px;
-    justify-content: flex-start;
-}
-.profile img{
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    
-}
-.fa-plus{
-    position: absolute;
-    background: #00a884;
-    color: white;
-    font-size: 17px;
-    padding: 3.7px 4px;
-    border: solid black 2px;
-    border-radius: 50%;
-    left: 0;
-    bottom: 0;
-    margin-left: 55px;
-    margin-bottom: 7px;
-}
-.about-page{
-    width: 73%;
-    padding: 5px 10px;
-    color: #86959f;
-}
-.title-date{
-    display: flex;
-    justify-content: space-between;
-}
-.title-pv{
-    padding:2px 0 10px 0 ;
-    font-size: 15px;    
-}
-.time{
-    font-size: 12px;
-    padding:4px 0 0 0px;
-}
-.last-message{
-    font-size: 12px;
+.last-message {
+  font-size: 12px;
 }
 
-.add-people{
-    background: #00a884;
-    display: inline-block;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 15px;
+.add-people {
+  background: #00a884;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 15px;
+}
+.fa-heart-crack {
+  color: white;
+  font-size: 25px;
+  padding: 17px;
+}
+.call-back {
+  color: #00a884 !important;
+  padding: 15px 0;
+  font-size: 17px;
+  position: absolute;
+}
+.call-back:hover {
+  color: #86959f !important;
+}
+.fa-search,
+.fa-arrow-left {
+  background: none;
+  border: none;
+  color: #86959f;
+  font-size: 18px;
+}
 
+.back-arrow{
+  padding:15px 20px;
 }
-.fa-heart-crack{
-    color: white;
-    font-size: 25px;
-    padding: 17px;
+.title-of-head h1{
+  padding: 10px;
+  margin-left: 50px;
 }
-.fa-phone{
-    color: #00a884!important;
-    /* background: red; */
-    padding: 15px 0;
-    font-size: 17px;
-    position: absolute;
+.your-profile {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  padding: 15px 20px;
+  transition: 0.3s;
+  border-bottom: solid 1px #ffffff14;
+  position: relative;
+  
 }
-.fa-phone:hover{
-    color: #86959f!important;
+.your-profile:hover{
+  background: rgba(255, 255, 255, 0.027);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.fa-qrcode{
+  font-size: 30px;
+  color: #00a884;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 30px 20px;
+}
+.items-of-set{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  padding: 8px 20px;
+  transition: 0.3s;
+  position: relative;
+  
+}
+.items-of-set:hover{
+  background: rgba(255, 255, 255, 0.027);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.icone-item i{
+  color: #86959f;
+  padding: 20px 0px 15px 8px;
+  font-size: 18px;
+}
+.icone-item {
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  justify-content: flex-start;
 }
 
+.about-item {
+  width: 73%;
+  padding: 5px 0px;
+  color: #86959f;
+}
+.title-item {
+  display: flex;
+  justify-content: space-between;
+  color: whitesmoke;
+  font-size: 14px;
+}
+.item-dic {
+  padding: 2px 0 10px 0;
+  font-size: 15px;
+}
+.discription{
+ font-size: 12px;
+}
+.from{
+  text-align: center;
+  margin-top: 30px;
+  color: #86959f;
+}
+.from span{
+  display: block;
+  padding: 1px 0;
+}
+.brand{
+  font-size: 22px;
+  color: whitesmoke;
+}
