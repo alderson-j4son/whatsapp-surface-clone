@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Cantarell", sans-serif;
+  box-sizing: border-box;
 }
 body {
   background: #121b22;
@@ -9,9 +10,11 @@ body {
 #header {
   background: #1f2c34;
   color: #86959f;
-  /* font-family: 'Quicksand', sans-serif; */
   font-family: "Cantarell", sans-serif;
   position: relative;
+  box-shadow: 0 0 12px #1f2c34;
+
+  
 }
 .title-head {
   padding: 20px;
@@ -19,16 +22,14 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.title {
-}
 .option {
   padding: 10px;
 }
 .fa-search {
-  padding: 0 10px 0 0;
+  margin-right: 10px;
 }
 .fa-ellipsis-v {
-  padding: 0 0 0 10px;
+  margin-left: 10px;
 }
 nav {
   width: 100%;
@@ -42,7 +43,6 @@ nav {
 .nav-link {
   display: inline-block;
   padding: 10px 15px;
-  /* background-color: yellow; */
   border-bottom: solid transparent 4px;
 }
 .nav-link a {
@@ -55,24 +55,19 @@ nav {
 .active a {
   color: #0ca383;
 }
-.nav-link a:hover {
-}
 .nav-items:first-child {
   padding: 0;
 }
 img {
   width: 100%;
 }
-#chats {
-}
 .pv {
-  /* width: 100%; */
+  width: 100%;
   display: flex;
   flex-wrap: wrap-reverse;
   padding: 10px 15px;
-  /* background: blue; */
-  /* float: left; */
   transition: 0.3s;
+  text-decoration: none;
 }
 .pv:hover {
   background: rgba(255, 255, 255, 0.027);
@@ -105,7 +100,7 @@ img {
 }
 .time {
   font-size: 12px;
-  padding: 4px 0 0 0px;
+  padding: 4px 0 0 0;
 }
 .last-message {
   font-size: 12px;
@@ -187,7 +182,6 @@ img {
   background: #172127;
   color: whitesmoke;
   border: none;
-  /* display: inline-block; */
   float: left;
   outline: none;
   font-size: 17px;
@@ -200,4 +194,31 @@ img {
 }
 .search-btn:focus-within .search-box {
   display: block;
+}
+.chat-header{
+  display: none;
+}
+.welcome{
+  display: none;
+}
+
+@media only screen and (min-width:768px)  {
+  .row{
+    width: 25%;
+    display: inline-block;
+
+  }
+  #chat-scren{
+    background:#121b22;
+    position: absolute;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  
+    
+  }
+  .search-inp{
+    width: 89%;
+  }
+  
 }
